@@ -1,0 +1,44 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet-large: 1024px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-small: 380px;
+
+:root {
+  --html-fs: 1px;
+  --ff: "DM Sans", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --c-white: #fff;
+  --c-link: #f9fafb;
+  --c-desc: #e5e7eb;
+  --c-footer: rgba(255, 255, 255, 0.8);
+  --c-gradient: linear-gradient(90deg, #2563eb 0.11%, #d946ef 58.65%);
+  --c-gradient-btn: linear-gradient(90deg, #2563eb 0.36%, #d946ef 201.02%);
+  --c-gradient-btn-backwards: linear-gradient(
+    90deg,
+    #d946ef 0.36%,
+    #2563eb 201.02%
+  );
+
+  --logo: normal 500 20rem / normal var(--ff);
+  --link: normal 500 14rem / normal var(--ff);
+  --title: normal 700 58rem/84rem var(--ff);
+  --title-tablet: normal 700 45rem/60rem var(--ff);
+  --desc: normal 500 15rem/30rem var(--ff);
+  --btn: normal 500 16rem / normal var(--ff);
+  --heading2: normal 700 42rem / normal var(--ff);
+  --heading2-mobile: normal 700 36rem / normal var(--ff);
+  --service-desc: normal 400 16rem/26rem var(--ff);
+  --service-item-title: normal 500 24rem / normal var(--ff);
+  --team-text: normal 500 28rem / normal var(--ff);
+  --team-text2: normal 400 16rem / normal var(--ff);
+  --input: normal 400 18rem/30rem var(--ff);
+  --input-btn: normal 500 20rem/30rem var(--ff);
+  --subscripe-desc: normal 400 16rem/30rem var(--ff);
+  --footer-adress: normal 400 16rem/32rem var(--ff);
+  --footer-copy: normal 400 14rem/14rem var(--ff);
+  --footer: normal 500 18rem/40rem var(--ff);
+}

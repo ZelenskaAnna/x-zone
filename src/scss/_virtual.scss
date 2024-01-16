@@ -1,0 +1,92 @@
+.virtual {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 534rem;
+    max-height: 680rem;
+    justify-content: center;
+    gap: 30rem;
+    @include desktop-small {
+    }
+    @include tablet {
+      max-width: 100%;
+      gap: 18rem;
+      text-align: center;
+    }
+  }
+  &__title {
+    background: var(--c-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: var(--title);
+    @include tablet {
+      font: var(--title-tablet);
+    }
+  }
+  &__desc {
+    color: var(--c-desc);
+    font: var(--desc);
+    text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.07);
+    @include tablet {
+      max-width: 952rem;
+      margin-inline: auto;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 29rem;
+    @include tablet {
+      justify-content: center;
+    }
+  }
+  &__btn-join {
+    color: var(--c-link);
+    font: var(--btn);
+    border-radius: 6rem;
+    background: var(--c-gradient-btn);
+    padding: 20rem 40rem;
+    transition: var(--transition);
+    &:hover {
+      background: var(--c-gradient-btn-backwards);
+    }
+  }
+  &__btn-play {
+    color: var(--c-link);
+    font: var(--btn);
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    transition: var(--transition);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__img {
+    max-height: 680rem;
+    margin-right: -81rem;
+    @include desktop-small {
+      margin-right: 0;
+      height: 60%;
+      width: 60%;
+      overflow: hidden;
+    }
+    @include tablet {
+      height: 40%;
+      width: 40%;
+      overflow: hidden;
+      margin-inline: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

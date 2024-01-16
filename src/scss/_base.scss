@@ -1,0 +1,48 @@
+* {
+  font-family: var(--ff);
+}
+
+html {
+  font-size: var(--html-fs);
+  scroll-behavior: smooth;
+  @include tablet-large {
+    font-size: calc(var(--html-fs) * 0.9);
+  }
+  @include tablet {
+    font-size: calc(var(--html-fs) * 0.9);
+  }
+  @include mobile {
+    font-size: calc(var(--html-fs) * 0.8);
+  }
+  @include mobile-small {
+    font-size: calc(var(--html-fs) * 0.7);
+  }
+}
+
+body {
+  background-image: url("../assets/bg.png");
+}
+
+section,
+header,
+footer {
+  margin-inline: auto;
+}
+
+.container {
+  max-width: calc(1170px + 40px);
+  padding: 0 20px;
+  margin-inline: auto;
+}
+
+.title {
+  color: var(--c-white);
+  font: var(--heading2);
+  @include mobile {
+    font: var(--heading2-mobile);
+  }
+}
+.desc {
+  color: var(--c-white);
+  font: var(--service-desc);
+}

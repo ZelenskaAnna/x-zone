@@ -1,0 +1,124 @@
+.footer {
+  margin-top: 98rem;
+  @include desktop-small {
+    margin-top: 80rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33rem;
+    @include tablet-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr auto;
+    }
+    @include mobile {
+      grid-template-columns: 1fr auto;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 19rem;
+  }
+  &__type {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    a {
+      color: var(--c-footer);
+      font: var(--footer-adress);
+      transition: var(--transition);
+      &:hover {
+        background: var(--c-gradient-btn);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  &__socials {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+    a {
+      transition: var(--transition);
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    a {
+      color: var(--c-footer);
+      font: var(--footer);
+      letter-spacing: 0.18rem;
+      transition: var(--transition);
+      &:hover {
+        background: var(--c-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    @include tablet-small {
+      &:nth-child(4),
+      &:nth-child(5) {
+        margin-top: 20rem;
+      }
+    }
+    @include mobile {
+      &:nth-child(3) {
+        margin-top: 20rem;
+      }
+    }
+  }
+}
+
+.copy {
+  background: linear-gradient(
+    to bottom,
+    rgba(150, 150, 150, 0.2) 0%,
+    rgba(150, 150, 150, 0.2) 1rem,
+    transparent 1rem,
+    transparent 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 1rem;
+}
+.copy-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34rem;
+  padding-bottom: 34rem;
+  align-items: center;
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 15rem;
+  }
+
+  &__copyright {
+    color: var(--c-footer);
+    font: var(--footer-copy);
+  }
+  &__list {
+    display: flex;
+    gap: 53rem;
+    @include mobile-small {
+      gap: 20rem;
+    }
+    a {
+      color: var(--c-footer);
+      font: var(--footer-copy);
+      transition: var(--transition);
+      &:hover {
+        background: var(--c-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
